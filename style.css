@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+header img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 10px solid #8bc3ca;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffef62;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/736x/14/43/8a/14438afddb14fe706c3bf0ddf50edb40.jpg') no-repeat center center / cover;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  padding: 12px 30px;
+  background: #1db954;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #17a74a;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  width: 250px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  background: #1db954;
+}
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navigation a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.btnLogin {
+  padding: 8px 20px;
+  border: none;
+  background: #1db954;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Login Popup */
+.login-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 350px;
+  background: #111;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+  color: white;
+}
+
+/* Header */
+
+header {
+  background: #ffa200;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Artists section */
+
+.artists-section {
+  padding: 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.artist-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.artist-card {
+  background: palevioletred;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.artist-card:hover {
+  background: transparent;
+  transform: scale(1.05);
+}
+/* Active Class */
+.login-box.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.login-box h2 {
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #1db954;
+  outline: none;
+  color: white;
+}
+
+.input-box label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #1bfd2a;
+  transition: 0.3s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -15px;
+  font-size: 12px;
+  color: #1db954;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background: #1db954;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.page-section {
+  padding: 40px;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.music-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.music-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.music-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.music-card h3 {
+  margin: 10px 0;
+}
+
+.music-card p {
+  color: #ffef62;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial;
+}
+
+.contact-form button {
+  padding: 10px;
+  background: #1db954;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background: #17a74a;
+}
+
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+.video-container {
+  margin-top: 20px;
+}
+
+audio {
+  margin-top: 20px;
+}
+
+.artists ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.artists li {
+  padding: 10px;
+  background: #eec06b;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.artists li:hover {
+  background: #1db954;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #55edea;
+  text-align: center;
+}
