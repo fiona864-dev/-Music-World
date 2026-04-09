@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+       <loc>https://fiona864-dev.github.io/-Music-World/</loc>
+       <lastmod>2026-04-09T08:24:45+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://fiona864-dev.github.io/-Music-World/home.html</loc>
+       <lastmod>2026-04-09T08:24:45+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://fiona864-dev.github.io/-Music-World/songs.html</loc>
+       <lastmod>2026-04-09T08:24:45+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://fiona864-dev.github.io/-Music-World/artists.html</loc>
+       <lastmod>2026-04-09T08:24:45+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://fiona864-dev.github.io/-Music-World/contact.html</loc>
+       <lastmod>2026-04-09T08:24:45+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+</urlset>
